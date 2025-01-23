@@ -307,3 +307,23 @@ footer {
     color: #333;
     font-size: 1rem;
 }
+
+#testimonials {
+    padding: 40px 20px;
+    background-color: #fff8f0;
+    text-align: center;
+}
+
+.testimonial-carousel {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}

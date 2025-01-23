@@ -1,3 +1,11 @@
+fetch('http://127.0.0.1:5000/submit-form', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ name, email, message }),
+})
+
 // Reserve Table Button
 document.getElementById('reserveTableBtn').addEventListener('click', function () {
     alert('Thank you for reserving a table! We will contact you shortly.');
@@ -13,8 +21,23 @@ document.getElementById('contactForm').addEventListener('submit', function (even
 
     if (name && email && message) {
         if (validateEmail(email)) {
-            alert('Thank you for your message! We will get back to you soon.');
-            document.getElementById('contactForm').reset(); // Clear the form
+            // Send data to the backend
+            fetch('/submit-form', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ name, email, message }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('responseMessage').textContent = data.message;
+                document.getElementById('contactForm').reset(); // Clear the form
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('responseMessage').textContent = 'An error occurred. Please try again.';
+            });
         } else {
             alert('Please enter a valid email address.');
         }
@@ -22,6 +45,11 @@ document.getElementById('contactForm').addEventListener('submit', function (even
         alert('Please fill out all fields.');
     }
 });
+
+function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(String(email).toLowerCase());
+}
 
 // Email validation function
 function validateEmail(email) {
@@ -47,7 +75,22 @@ scrollToTopBtn.addEventListener('click', function () {
     });
 });
 
-// Initialize Slick Carousel
+// Initialize Slick Carousel for Testimonials
+$(document).ready(function(){
+    $('.testimonial-carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: true, // Add navigation arrows
+        pauseOnHover: true, // Pause on hover
+    });
+});
+
+// Initialize Slick Carousel for Special Offers
 $(document).ready(function(){
     $('.offer-carousel').slick({
         dots: true,
