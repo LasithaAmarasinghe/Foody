@@ -1,0 +1,329 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8f0; /* Light orange background */
+    color: #333;
+}
+
+header {
+    background: linear-gradient(45deg, #ff4500, #ff8c00, #ffd700); /* Red, orange, yellow gradient */
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+header .tagline {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.highlight {
+    color: #ff4500; /* Red-orange accent */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Yellow hover effect */
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #ff8c00; /* Orange heading */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-content, .contact-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-content img, .contact-content img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.menu-item {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.menu-item img {
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.menu-item h3 {
+    color: #ff4500; /* Red-orange accent */
+    margin-bottom: 10px;
+}
+
+.menu-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-item ul li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+footer {
+    background: linear-gradient(45deg, #ff4500, #ff8c00, #ffd700); /* Red, orange, yellow gradient */
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* Image Sizes */
+.about-content img,
+.menu-item img,
+.contact-content img {
+    width: 100%; /* Make images responsive */
+    max-width: 400px; /* Limit maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+}
+
+/* Reserve Table Button */
+#reserveTableBtn {
+    background-color: #ff4500; /* Red-orange */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#reserveTableBtn:hover {
+    background-color: #ff8c00; /* Orange */
+}
+
+/* Contact Section */
+#contact {
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.contact-info {
+    flex: 1;
+    max-width: 400px;
+}
+
+.contact-info img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin: 15px 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.contact-info ul li strong {
+    color: #ff4500; /* Red-orange accent */
+}
+
+#contactForm {
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contactForm label {
+    font-weight: bold;
+    color: #333;
+}
+
+#contactForm input,
+#contactForm textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contactForm input::placeholder,
+#contactForm textarea::placeholder {
+    color: #999;
+}
+
+#contactForm button {
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#contactForm button:hover {
+    background-color: #ff8c00; /* Orange hover effect */
+}
+
+/* Scroll to Top Button */
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.2rem;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #ff8c00;
+}
+
+/* Location Section */
+#location {
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+#location h2 {
+    text-align: center;
+    color: #ff4500; /* Red-orange accent */
+    margin-bottom: 20px;
+}
+
+.map-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Special Offers Section */
+#offers {
+    padding: 40px 20px;
+    background-color: #fff8f0; /* Light orange background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+#offers h2 {
+    text-align: center;
+    color: #ff4500; /* Red-orange accent */
+    margin-bottom: 20px;
+}
+
+.offer-carousel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.offer {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offer:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.offer h3 {
+    color: #ff4500; /* Red-orange accent */
+    margin-bottom: 10px;
+}
+
+.offer p {
+    color: #333;
+    font-size: 1rem;
+}
+
+#testimonials {
+    padding: 40px 20px;
+    background-color: #fff8f0;
+    text-align: center;
+}
+
+.testimonial-carousel {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
