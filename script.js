@@ -11,68 +11,68 @@ document.getElementById('reserveTableBtn').addEventListener('click', function ()
     alert('Thank you for reserving a table! We will contact you shortly.');
 });
 
-// Contact Form Validation
-document.getElementById('contactForm').addEventListener('submit', function (event) {
-    event.preventDefault(); // Prevent form submission
+document.addEventListener('DOMContentLoaded', function () {
+    // Contact Form Submission
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (event) {
+            event.preventDefault();
 
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const message = document.getElementById('message').value.trim();
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
 
-    if (name && email && message) {
-        if (validateEmail(email)) {
-            // Send data to the backend
-            fetch('/submit-form', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ name, email, message }),
-            })
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('responseMessage').textContent = data.message;
-                document.getElementById('contactForm').reset(); // Clear the form
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                document.getElementById('responseMessage').textContent = 'An error occurred. Please try again.';
+            if (name && email && message) {
+                if (validateEmail(email)) {
+                    fetch('http://127.0.0.1:5000/submit-form', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ name, email, message }),
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        document.getElementById('responseMessage').textContent = data.message;
+                        contactForm.reset();
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        document.getElementById('responseMessage').textContent = 'An error occurred. Please try again.';
+                    });
+                } else {
+                    alert('Please enter a valid email address.');
+                }
+            } else {
+                alert('Please fill out all fields.');
+            }
+        });
+    }
+
+    // Scroll to Top Button
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    if (scrollToTopBtn) {
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 300) {
+                scrollToTopBtn.style.display = 'block';
+            } else {
+                scrollToTopBtn.style.display = 'none';
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
             });
-        } else {
-            alert('Please enter a valid email address.');
-        }
-    } else {
-        alert('Please fill out all fields.');
+        });
     }
-});
 
-function validateEmail(email) {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(String(email).toLowerCase());
-}
-
-// Email validation function
-function validateEmail(email) {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(String(email).toLowerCase());
-}
-
-// Scroll to Top Button
-const scrollToTopBtn = document.getElementById('scrollToTopBtn');
-
-window.addEventListener('scroll', function () {
-    if (window.scrollY > 300) {
-        scrollToTopBtn.style.display = 'block';
-    } else {
-        scrollToTopBtn.style.display = 'none';
+    // Email Validation
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(String(email).toLowerCase());
     }
-});
-
-scrollToTopBtn.addEventListener('click', function () {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
 });
 
 // Initialize Slick Carousel for Testimonials
