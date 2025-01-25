@@ -231,6 +231,14 @@ footer {
     background-color: #ff8c00; /* Orange hover effect */
 }
 
+/* Response Message */
+#responseMessage {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #ff4500; /* Red-orange accent */
+}
+
 /* Scroll to Top Button */
 #scrollToTopBtn {
     display: none;
