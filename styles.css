@@ -77,65 +77,72 @@ h2 {
     height: auto;
 }
 
-.menu-item {
-    margin-bottom: 30px;
+/* Menu Section */
+#menu {
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.menu-category {
+    margin-bottom: 40px;
+}
+
+.menu-category h3 {
+    color: #ff4500; /* Red-orange accent */
     text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.menu-items-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    gap: 20px;
+    justify-content: space-between; /* Distribute space evenly */
+}
+
+.menu-item {
+    flex: 0 0 calc(33.33% - 20px); /* Each item takes 1/3 of the container width minus gap */
+    text-align: center;
+    background-color: #fff8f0; /* Light orange background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .menu-item img {
+    width: 100%; /* Make images responsive */
+    height: 350px; /* Fixed height for all images */
+    object-fit: cover; /* Ensure images cover the area without distortion */
     border-radius: 10px;
     margin-bottom: 15px;
 }
 
-.menu-item h3 {
+.menu-item h4 {
     color: #ff4500; /* Red-orange accent */
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.menu-item p {
+    color: #333;
+    font-size: 1rem;
     margin-bottom: 10px;
 }
 
-.menu-item ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.menu-item ul li {
-    margin: 10px 0;
-    font-size: 1.1rem;
-}
-
-footer {
-    background: linear-gradient(45deg, #ff4500, #ff8c00, #ffd700); /* Red, orange, yellow gradient */
-    color: #fff;
-    text-align: center;
-    padding: 15px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Image Sizes */
-.about-content img,
-.menu-item img,
-.contact-content img {
-    width: 100%; /* Make images responsive */
-    max-width: 400px; /* Limit maximum width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px;
-}
-
-/* Reserve Table Button */
-#reserveTableBtn {
-    background-color: #ff4500; /* Red-orange */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-#reserveTableBtn:hover {
-    background-color: #ff8c00; /* Orange */
+.menu-item .price {
+    color: #ff4500; /* Red-orange accent */
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 /* Contact Section */
@@ -363,8 +370,18 @@ footer {
         flex-direction: column;
     }
 
+    .menu-item {
+        flex: 0 0 calc(50% - 20px); /* Two items per row on smaller screens */
+    }
+
     .menu-item img,
     .contact-info img {
         max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-item {
+        flex: 0 0 100%; /* One item per row on mobile */
     }
 }
