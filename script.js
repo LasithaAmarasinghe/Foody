@@ -75,6 +75,48 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const carouselItems = document.querySelectorAll('.carousel-item');
+    let currentIndex = 0;
+
+    function showNextItem() {
+        carouselItems[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % carouselItems.length;
+        carouselItems[currentIndex].classList.add('active');
+    }
+
+    // Initialize the first item
+    carouselItems[currentIndex].classList.add('active');
+
+    // Auto-rotate the carousel every 5 seconds
+    setInterval(showNextItem, 5000);
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const carouselItems = document.querySelectorAll('.carousel-item');
+    let currentIndex = 0;
+
+    function showNextItem() {
+        carouselItems[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % carouselItems.length;
+        carouselItems[currentIndex].classList.add('active');
+    }
+
+    // Initialize the first item
+    carouselItems[currentIndex].classList.add('active');
+
+    // Auto-rotate the carousel every 5 seconds
+    setInterval(showNextItem, 5000);
+
+    // Explore Menu Button
+    const exploreMenuBtn = document.getElementById('exploreMenuBtn');
+    if (exploreMenuBtn) {
+        exploreMenuBtn.addEventListener('click', function () {
+            window.location.href = '#menu'; // Scroll to the menu section
+        });
+    }
+});
+
 // Initialize Slick Carousel for Testimonials
 $(document).ready(function(){
     $('.testimonial-carousel').slick({
