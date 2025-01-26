@@ -29,6 +29,31 @@ header .tagline {
     color: #ff4500; /* Red-orange accent */
 }
 
+/* CSS for Reserve a Table button */
+#reserveTableBtn {
+    background-color: #ff5722; /* Orange background */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for size */
+    font-size: 16px; /* Font size */
+    
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+}
+
+#reserveTableBtn:hover {
+    background-color: #e64a19; /* Darker orange on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+#reserveTableBtn:active {
+    background-color: #d84315; /* Even darker on click */
+    transform: translateY(0); /* Reset position on click */
+}
+
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -89,8 +114,10 @@ h2 {
 }
 
 .about-us-container {
+    
     max-width: 1200px;
     margin: 0 auto;
+    
 }
 
 .about-content {
@@ -133,7 +160,7 @@ h2 {
     max-width: 500px;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px #ff8c00;
 }
 
 .carousel-item {
@@ -150,6 +177,7 @@ h2 {
     object-fit: cover; /* Ensure images cover the area without distortion */
     border-radius: 10px;
     margin-bottom: 20px;
+    
 }
 
 /* Menu Section */
@@ -390,7 +418,7 @@ h2 {
 
 #offers h2 {
     text-align: center;
-    color: #ff4500; /* Red-orange accent */
+    color: #ff8c00; /* Red-orange accent */
     margin-bottom: 20px;
 }
 
@@ -447,12 +475,33 @@ h2 {
     max-width: 300px;
 }
 
+/* Social Media Icons */
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+    margin-bottom: 20px; /* Increase the gap between icons and text */
+}
+
+.social-media-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    color: #fff; /* Default icon color (white) */
+    font-size: 24px; /* Icon size */
+    transition: color 0.3s ease;
+}
+
+.social-media-icons a:hover {
+    color: #ff4500; /* Hover color (orange) */
+}
+
 /* Footer Styles */
 footer {
     background: linear-gradient(45deg, #ff4500, #ff8c00, #ffd700); /* Red, orange, yellow gradient */
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 40px 0; /* Increased padding for better spacing */
     position: relative;
     bottom: 0;
     width: 100%;
@@ -462,7 +511,7 @@ footer {
 }
 
 footer p {
-    margin: 0; /* Remove default margin */
+    margin: 10px 0; /* Add margin to create space between text lines */
     font-weight: bold;
 }
 
