@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 # Foody
-=======
-# Foody
->>>>>>> laptop
