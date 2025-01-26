@@ -29,8 +29,6 @@ header .tagline {
     color: #ff4500; /* Red-orange accent */
 }
 
-<<<<<<< HEAD
-=======
 /* CSS for Reserve a Table button */
 #reserveTableBtn {
     background-color: #ff5722; /* Orange background */
@@ -56,7 +54,6 @@ header .tagline {
 }
 
 
->>>>>>> laptop
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -91,10 +88,7 @@ h2 {
     color: #ff8c00; /* Orange heading */
     text-align: center;
     margin-bottom: 20px;
-<<<<<<< HEAD
-=======
     font-size: 2.5rem; /* Increased font size for "Our Menu" */
->>>>>>> laptop
 }
 
 .about-content, .contact-content {
@@ -109,55 +103,6 @@ h2 {
     height: auto;
 }
 
-<<<<<<< HEAD
-.menu-item {
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.menu-item img {
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-.menu-item h3 {
-    color: #ff4500; /* Red-orange accent */
-    margin-bottom: 10px;
-}
-
-.menu-item ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.menu-item ul li {
-    margin: 10px 0;
-    font-size: 1.1rem;
-}
-
-footer {
-    background: linear-gradient(45deg, #ff4500, #ff8c00, #ffd700); /* Red, orange, yellow gradient */
-    color: #fff;
-    text-align: center;
-    padding: 15px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-/* Image Sizes */
-.about-content img,
-.menu-item img,
-.contact-content img {
-    width: 100%; /* Make images responsive */
-    max-width: 400px; /* Limit maximum width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px;
-}
-
-/* Reserve Table Button */
-#reserveTableBtn {
-    background-color: #ff4500; /* Red-orange */
-=======
 /* About Us Section */
 #home {
     padding: 60px 20px;
@@ -197,20 +142,12 @@ footer {
 
 #exploreMenuBtn {
     background-color: #ff4500;
->>>>>>> laptop
     color: #fff;
     border: none;
     padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
-<<<<<<< HEAD
-    margin-top: 20px;
-}
-
-#reserveTableBtn:hover {
-    background-color: #ff8c00; /* Orange */
-=======
     transition: background-color 0.3s ease;
 }
 
@@ -327,7 +264,6 @@ footer {
     .menu-item {
         flex: 0 0 100%; /* One item per row on mobile */
     }
->>>>>>> laptop
 }
 
 /* Contact Section */
@@ -339,13 +275,6 @@ footer {
     margin: 20px 0;
 }
 
-<<<<<<< HEAD
-.contact-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: flex-start;
-=======
 .contact-location-container {
     display: flex;
     flex-wrap: wrap;
@@ -361,7 +290,6 @@ footer {
 .location-content {
     flex: 1;
     max-width: 48%; /* Adjust as needed */
->>>>>>> laptop
 }
 
 .contact-info {
@@ -431,8 +359,6 @@ footer {
     background-color: #ff8c00; /* Orange hover effect */
 }
 
-<<<<<<< HEAD
-=======
 /* Response Message */
 #responseMessage {
     text-align: center;
@@ -441,7 +367,6 @@ footer {
     color: #ff4500; /* Red-orange accent */
 }
 
->>>>>>> laptop
 /* Scroll to Top Button */
 #scrollToTopBtn {
     display: none;
@@ -493,11 +418,7 @@ footer {
 
 #offers h2 {
     text-align: center;
-<<<<<<< HEAD
-    color: #ff4500; /* Red-orange accent */
-=======
     color: #ff8c00; /* Red-orange accent */
->>>>>>> laptop
     margin-bottom: 20px;
 }
 
@@ -552,8 +473,6 @@ footer {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 300px;
-<<<<<<< HEAD
-=======
 }
 
 /* Social Media Icons */
@@ -636,5 +555,4 @@ footer a:hover {
     .menu-item {
         flex: 0 0 100%; /* One item per row on mobile */
     }
->>>>>>> laptop
 }
