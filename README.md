@@ -54,6 +54,13 @@ This project showcases a clean and elegant design, featuring sections for **🔐
 ![flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 ![SQlite](https://img.shields.io/badge/Sqlite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
 
+## 🎥 Demo
+
+Here’s a quick demo of the **Foody** app:
+
+[![▶️ Watch the demo](https://github.com/user-attachments/assets/8e030ecc-6eb6-4a71-9735-ddafb312d0c5)](https://vimeo.com/1052780587/c2f50fa479)
+
+
 ## 🚀 Setup Instructions
 
 1. Clone the repository:
