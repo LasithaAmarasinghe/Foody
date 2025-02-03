@@ -26,3 +26,32 @@ Welcome to **Foody**, a modern and responsive restaurant website built with **HT
 ## Contact Us
 <img src="pictures/Contact Us.png">
 
+## Features
+
+- **User Authentication**: Secure login and registration system using Flask and SQLite.
+- **Responsive Design**: The website is fully responsive and works seamlessly on all devices.
+- **Interactive Menu**: Displays appetizers, main courses, and desserts in a clean, grid-based layout.
+- **Contact Form**: Allows users to send messages directly from the website.
+- **Google Maps Integration**: Displays the restaurant's location using an embedded Google Map.
+- **Carousel**: A rotating image carousel in the **About Us** section.
+- **Hover Effects**: Interactive hover effects on menu items and buttons.
+
+## Setup Instructions
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/LasithaAmarasinghe/Foody.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd foody
+   ```
+3. Install dependencies:
+   ```sh
+   pip install -r requirements.txt
+   ```
+4. Run the Flask application:
+   ```sh
+   python app.py
+   ```
+5. Open `http://127.0.0.1:5000/` in your browser to access the website.
