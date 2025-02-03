@@ -1,4 +1,6 @@
-# Foody
+# Foody - Restaurant Website
+
+Welcome to **Foody**, a modern and responsive restaurant website built with **HTML**, **CSS**, **JavaScript** and **Flask**. This project showcases a clean and elegant design, featuring sections for **LogIn**, **Registration**, **About Us**, **Menu**, **Contact Us**, **Location**, **Special Offers**, and **Testimonials**.
 
 ## Registration Page
 <img src="pictures/Registration Page.png">
