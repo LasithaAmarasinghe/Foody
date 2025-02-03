@@ -58,7 +58,7 @@ This project showcases a clean and elegant design, featuring sections for **🔐
 
 Here’s a quick demo of the **Foody** app:
 
-[![▶️ Watch the demo](https://github.com/user-attachments/assets/8e030ecc-6eb6-4a71-9735-ddafb312d0c5)](https://vimeo.com/1052780587/c2f50fa479)
+[![▶️ Watch the demo](https://github.com/user-attachments/assets/8e030ecc-6eb6-4a71-9735-ddafb312d0c5)](video_link)
 
 
 ## 🚀 Setup Instructions
