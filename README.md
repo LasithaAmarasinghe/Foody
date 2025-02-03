@@ -47,7 +47,12 @@ This project showcases a clean and elegant design, featuring sections for **🔐
 - **Flask**: For backend development and server-side logic.
 - **SQLite**: For managing the database and storing user information.
 - **Google Maps API**: For displaying the restaurant's location.
-- **Slick Carousel**: For the image carousel in the **About Us** section.
+
+![html5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![css3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![js](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![SQlite](https://img.shields.io/badge/Sqlite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
 
 ## 🚀 Setup Instructions
 
