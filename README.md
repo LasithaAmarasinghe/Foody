@@ -35,6 +35,7 @@ Welcome to **Foody**, a modern and responsive restaurant website built with **HT
 - **Google Maps Integration**: Displays the restaurant's location using an embedded Google Map.
 - **Carousel**: A rotating image carousel in the **About Us** section.
 - **Hover Effects**: Interactive hover effects on menu items and buttons.
+- **Modern Glassmorphism UI Design**: The registration and sign up pages feature a sleek, frosted-glass effect.
 
 ## Setup Instructions
 
