@@ -37,6 +37,16 @@ Welcome to **Foody**, a modern and responsive restaurant website built with **HT
 - **Hover Effects**: Interactive hover effects on menu items and buttons.
 - **Modern Glassmorphism UI Design**: The registration and sign up pages feature a sleek, frosted-glass effect.
 
+## Technologies Used
+
+- **HTML5**: For structuring the website.
+- **CSS3**: For styling and layout.
+- **JavaScript**: For interactivity (e.g., carousel, form submission).
+- **Flask**: For backend development and server-side logic.
+- **SQLite**: For managing the database and storing user information.
+- **Google Maps API**: For displaying the restaurant's location.
+- **Slick Carousel**: For the image carousel in the **About Us** section.
+
 ## Setup Instructions
 
 1. Clone the repository:
