@@ -2,7 +2,7 @@
 
 Welcome to **Foody**, a modern and responsive restaurant website built with **HTML**, **CSS**, **JavaScript** and **Flask**. 
 
-This project showcases a clean and elegant design, featuring sections for **🔐 LogIn**, **📝 Registration**, **ℹ️ About Us**, **🍔 Menu**, **📞 Contact Us**, **📍 Location**, **🎉 Special Offers**, and **💬 Testimonials**.
+This project showcases a clean and elegant design, featuring sections for LogIn, Registration, About Us, Menu, Contact Us, Location, Special Offers and Testimonials.
 
 ## 📌 Registration Page
 <img src="pictures/Registration Page.png">
@@ -30,14 +30,14 @@ This project showcases a clean and elegant design, featuring sections for **🔐
 
 ## ✨ Features
 
-- **🔐 User Authentication**: Secure login and registration system using Flask and SQLite.
-- **📱 Responsive Design**: The website is fully responsive and works seamlessly on all devices.
-- **🍽️ Interactive Menu**: Displays appetizers, main courses, and desserts in a clean, grid-based layout.
-- **📩 Contact Form**: Allows users to send messages directly from the website.
-- **🗺️ Google Maps Integration**: Displays the restaurant's location using an embedded Google Map.
-- **🎠 Carousel**: A rotating image carousel in the **About Us** section.
-- **✨ Hover Effects**: Interactive hover effects on menu items and buttons.
-- **💎 Modern Glassmorphism UI Design**: The registration and sign-up pages feature a sleek, frosted-glass effect.
+- **User Authentication**: Secure login and registration system using Flask and SQLite.
+- **Responsive Design**: The website is fully responsive and works seamlessly on all devices.
+- **Interactive Menu**: Displays appetizers, main courses, and desserts in a clean, grid-based layout.
+- **Contact Form**: Allows users to send messages directly from the website.
+- **Google Maps Integration**: Displays the restaurant's location using an embedded Google Map.
+- **Carousel**: A rotating image carousel in the **About Us** section.
+- **Hover Effects**: Interactive hover effects on menu items and buttons.
+- **Modern Glassmorphism UI Design**: The registration and sign-up pages feature a sleek, frosted-glass effect.
 
 ## 🛠️ Technologies Used
 
