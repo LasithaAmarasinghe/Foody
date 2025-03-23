@@ -69,7 +69,7 @@ Here’s a quick demo of the **Foody** app:
    ```
 2. Navigate to the project directory:
    ```sh
-   cd foody
+   cd Foody
    ```
 3. Install dependencies:
    ```sh
